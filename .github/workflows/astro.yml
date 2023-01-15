@@ -41,7 +41,6 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: "nostrmoe"
           directory: ${{ env.BUILD_PATH }}/dist
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
