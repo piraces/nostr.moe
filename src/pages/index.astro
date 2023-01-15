@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="nostr.moe">
+	<main>
+		<h1><span class="text-gradient">nostr.moe</span></h1>
+		<p class="presentation">
+			Welcome to nostr.moe <strong>the home of various nostr projects</strong>.
+			Checkout the list below
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://nostr.developer.li"
+				title="nostr.developer.li"
+				body="A public general purpose relay of confidence."
+			/>
+			<Card
+				href="https://rsslay.nostr.moe"
+				title="rsslay"
+				body="Turns RSS or Atom feeds into Nostr profiles."
+			/>
+			<Card
+				href="https://foolay.nostr.moe"
+				title="foolay"
+				body="A minimal, forward-only Nostr relay."
+			/>
+		</ul>
+		<p class="presentation">
+			Don't forget to checkout <strong>other awesome projects from the community</strong>
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://www.nostr.net"
+				title="Awesome nostr"
+				body="A curated list of nostr projects and resources."
+			/>
+			<Card
+				href="https://nostr.how/"
+				title="nostr.how"
+				body="Nostr: What, why, and how?"
+			/>
+			<Card
+				href="https://nostr.band/"
+				title="nostr.band"
+				body="Your Web portal into the Nostr universe."
+			/>
+			<Card
+				href="https://nostr.watch/"
+				title="nostr.watch"
+				body="Real-time checking of status of some known relays with advanced checks."
+			/>
+			<Card
+				href="https://nostr.guru/"
+				title="Nostr Gateway"
+				body="A nostr web gateway for viewing events by their ID."
+			/>
+			<Card
+				href="https://nostr.directory/"
+				title="Nostr Directory"
+				body="Nostr Public Key Database. Find your follows on other social media in nostr."
+			/>
+			<Card
+				href="https://nashboard.space/"
+				title="Nashboard"
+				body="A Nostr network dashboard."
+			/>
+			<Card
+				href="https://nosbin.com/"
+				title="Nosbin"
+				body="The decentralized pasting platform, built on nostr."
+			/>
+			<Card
+				href="https://sendstr.com/"
+				title="Sendstr"
+				body="E2E encrypted shared clipboard."
+			/>
+		</ul>
+		<p class="presentation">
+			<strong>Awesome clients</strong> to use
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://snort.social/"
+				title="snort.social"
+				body="Web client"
+			/>
+			<Card
+				href="https://astral.ninja/"
+				title="astral.ninja"
+				body="Web client"
+			/>
+			<Card
+				href="https://damus.io/"
+				title="Damus"
+				body="iOS client"
+			/>
+			<Card
+				href="https://monstr.app/"
+				title="Monstr"
+				body="Truly Private Messaging for web, iOS and Android"
+			/>
+			<Card
+				href="https://github.com/KoalaSat/nostros"
+				title="Nostros"
+				body="A Nostr mobile client"
+			/>
+			<Card
+				href="https://coracle.social/"
+				title="Coracle"
+				body="Web client"
+			/>
+			<Card
+				href="https://iris.to/"
+				title="Iris"
+				body="Web client"
+			/>
+			<Card
+				href="https://hamstr.to/"
+				title="Hamstr"
+				body="Web client"
+			/>
+			<Card
+				href="https://nostr.rocks/"
+				title="Nostr.rocks"
+				body="Web client"
+			/>
+			<Card
+				href="https://www.minds.com/"
+				title="Minds"
+				body="Open source social network with nostr support"
+			/>
+		</ul>
+		<p class="presentation">
+			<a href="https://snort.social/p/npub1ftpy6thgy2354xypal6jd0m37wtsgsvcxljvzje5vskc9cg3a5usexrrtq">Connect with me on nostr</a>: <code>npub1ftpy6thgy2354xypal6jd0m37wtsgsvcxljvzje5vskc9cg3a5usexrrtq</code>
+		</p>
+		<p class="presentation">
+			<strong>Missing something?</strong> Feel free to <a href="https://github.com/piraces/nostr.moe">open a PR to this page on Github</a>
+		</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.presentation {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+		overflow-wrap: break-word;
+	}
+	.presentation code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.presentation strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
