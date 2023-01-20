@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+
+import { ownResources, projects, clients } from './resources';
 ---
 
 <Layout title="nostr.moe">
@@ -11,171 +13,37 @@ import Card from '../components/Card.astro';
 			Checkout the list below
 		</p>
 		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://nostr.developer.li"
-				title="nostr.developer.li"
-				body="A public general purpose relay of confidence."
-			/>
-			<Card
-				href="https://relay.nostr.moe"
-				title="relay.nostr.moe"
-				body="Another public general purpose relay of confidence."
-			/>
-			<Card
-				href="https://rsslay.nostr.moe"
-				title="rsslay"
-				body="Turns RSS or Atom feeds into Nostr profiles."
-			/>
-			<Card
-				href="https://rssbridge.nostr.moe"
-				title="RSS-Bridge"
-				body="RSS and Atom feed generator for websites that don't have one."
-			/>
-			<Card
-				href="https://foolay.nostr.moe"
-				title="foolay"
-				body="A minimal, forward-only Nostr relay."
-			/>
+			{ownResources.map((item) => (
+				<Card
+					href={item.href}
+					title={item.title}
+					body={item.body}
+				/>
+			  ))}
 		</ul>
 		<p class="presentation">
 			Don't forget to checkout <strong>other awesome projects from the community</strong>
 		</p>
 		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://www.nostr.net"
-				title="Awesome nostr"
-				body="A curated list of nostr projects and resources."
-			/>
-			<Card
-				href="https://nostr.how/"
-				title="nostr.how"
-				body="Nostr: What, why, and how?"
-			/>
-			<Card
-				href="https://nostr.band/"
-				title="nostr.band"
-				body="Your Web portal into the Nostr universe."
-			/>
-			<Card
-				href="https://nostr.watch/"
-				title="nostr.watch"
-				body="Real-time checking of status of some known relays with advanced checks."
-			/>
-			<Card
-				href="https://nostr.guru/"
-				title="Nostr Gateway"
-				body="A nostr web gateway for viewing events by their ID."
-			/>
-			<Card
-				href="https://nostr.directory/"
-				title="Nostr Directory"
-				body="Nostr Public Key Database. Find your follows on other social media in nostr."
-			/>
-			<Card
-				href="https://nashboard.space/"
-				title="Nashboard"
-				body="A Nostr network dashboard."
-			/>
-			<Card
-				href="https://nosbin.com/"
-				title="Nosbin"
-				body="The decentralized pasting platform, built on nostr."
-			/>
-			<Card
-				href="https://sendstr.com/"
-				title="Sendstr"
-				body="E2E encrypted shared clipboard."
-			/>
-			<Card
-				href="https://jesterui.github.io/"
-				title="Jester"
-				body="Chess over nostr."
-			/>
-			<Card
-				href="https://jesterui.github.io/"
-				title="Jester"
-				body="Chess over nostr."
-			/>
-			<Card
-				href="https://notes.blockcore.net/"
-				title="Blockcore"
-				body="Organize following in circles and have both public and private following lists."
-			/>
+			{projects.map((item) => (
+				<Card
+					href={item.href}
+					title={item.title}
+					body={item.body}
+				/>
+			  ))}
 		</ul>
 		<p class="presentation">
-			<strong>Awesome clients</strong> to use
+			<strong>Awesome clients</strong> to use (with minimal technical knowledge)
 		</p>
 		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://snort.social/"
-				title="snort.social"
-				body="Web client"
-			/>
-			<Card
-				href="https://astral.ninja/"
-				title="astral.ninja"
-				body="Web client"
-			/>
-			<Card
-				href="https://damus.io/"
-				title="Damus"
-				body="iOS client"
-			/>
-			<Card
-				href="https://monstr.app/"
-				title="Monstr"
-				body="Truly Private Messaging for web, iOS and Android"
-			/>
-			<Card
-				href="https://github.com/KoalaSat/nostros"
-				title="Nostros"
-				body="A Nostr mobile client"
-			/>
-			<Card
-				href="https://coracle.social/"
-				title="Coracle"
-				body="Web client"
-			/>
-			<Card
-				href="https://iris.to/"
-				title="Iris"
-				body="Web client"
-			/>
-			<Card
-				href="https://hamstr.to/"
-				title="Hamstr"
-				body="Web client"
-			/>
-			<Card
-				href="https://nostr.rocks/"
-				title="Nostr.rocks"
-				body="Web client"
-			/>
-			<Card
-				href="https://www.minds.com/"
-				title="Minds"
-				body="Open source social network with nostr support"
-			/>
-			<Card
-				href="https://yosup.app/"
-				title="Yo Sup"
-				body="Web client"
-			/>
-			<Card
-				href="https://github.com/KotlinGeekDev/Nosky"
-				title="Nosky"
-				body="A native Android client for Nostr"
-			/>
-			<Card
-				href="https://github.com/kaiwolfram/Nozzle"
-				title="Nozzle"
-				body="A Twitter-like native Android client"
-			/>
-			<Card
-				href="https://web.nostrid.app/"
-				title="Nostrid"
-				body="Multi-platform client"
-			/>
+			{clients.map((item) => (
+				<Card
+					href={item.href}
+					title={item.title}
+					body={item.body}
+				/>
+			  ))}
 		</ul>
 		<p class="presentation">
 			<a href="https://snort.social/p/npub1ftpy6thgy2354xypal6jd0m37wtsgsvcxljvzje5vskc9cg3a5usexrrtq">Connect with me on nostr</a>: <code>npub1ftpy6thgy2354xypal6jd0m37wtsgsvcxljvzje5vskc9cg3a5usexrrtq</code>
