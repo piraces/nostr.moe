@@ -185,5 +185,10 @@ export const clients: Resource[] = [
         href: "https://nostr.pro/",
         title: "Nostr pro",
         body: "Web client"
-    }
+    },
+	{
+		href: "https://github.com/vitorpamplona/amethyst",
+		title: "Amethyst",
+		body: "Nostr client for Android"
+	}
 ];
