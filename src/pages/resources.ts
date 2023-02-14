@@ -13,7 +13,7 @@ export const ownResources: Resource[] = [
 	{
 		href: "https://relay.nostr.moe",
 		title: "relay.nostr.moe",
-		body: "Another public general purpose relay of confidence."
+		body: "Paid (spam free) public general purpose relay of confidence."
 	},
 	{
 		href: "https://rsslay.nostr.moe",
