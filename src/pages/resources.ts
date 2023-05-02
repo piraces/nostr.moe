@@ -6,16 +6,6 @@ export interface Resource {
 
 export const ownResources: Resource[] = [
 	{
-		href: "https://nostr.developer.li",
-		title: "nostr.developer.li",
-		body: "A public general purpose relay of confidence."
-	},
-	{
-		href: "https://relay.nostr.moe",
-		title: "relay.nostr.moe",
-		body: "Paid (spam free) public general purpose relay of confidence."
-	},
-	{
 		href: "https://rsslay.nostr.moe",
 		title: "rsslay",
 		body: "Turns RSS or Atom feeds into Nostr profiles."
