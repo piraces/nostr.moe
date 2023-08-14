@@ -185,5 +185,10 @@ export const clients: Resource[] = [
 		href: "https://nostrgram.co/",
 		title: "Nostrgram",
 		body: "Web client"
+	},
+	{
+		href: "https://nos.social/",
+		title: "Nos",
+		body: "iOS / Mac client"
 	}
 ];
