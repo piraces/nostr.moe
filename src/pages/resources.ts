@@ -190,5 +190,10 @@ export const clients: Resource[] = [
 		href: "https://nos.social/",
 		title: "Nos",
 		body: "iOS / Mac client"
+	},
+		{
+		href: "https://nootti.com/",
+		title: "Nootti",
+		body: "Cross-posting iOS/iPad client for Nostr, Bluesky and Mastodon"
 	}
 ];
